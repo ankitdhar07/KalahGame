@@ -1,0 +1,20 @@
+.button {
+  border: none;
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 30px 10px 0px 375px;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: rgb(110, 182, 248);
+}
+
+.button2 {
+  background-color: royalblue;
+  ;
+}

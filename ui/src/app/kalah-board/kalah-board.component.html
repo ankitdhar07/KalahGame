@@ -1,0 +1,72 @@
+<button class="startButton" (click)="getStoneValue() ">Reset </button>
+
+<div>
+    <div *ngIf="Status=='FINISHED' && Winner==null"
+        style="color:red; text-align: center; font-size :  25px; background-color :beige; margin-left: 500px;margin-right: 500px;">
+        Game Draw </div>
+</div>
+<section>
+
+    <div *ngIf="Status=='PLAYER_ONE_TURN'">
+        <span style="text-align: center; margin-left: 13px; background-color: cadetblue; padding: 15px 20px;">Player
+            Turn:</span><button class="button button2">Player
+            One</button>
+    </div>
+    <div *ngIf="Status=='PLAYER_TWO_TURN'">
+        <span style="text-align: center; margin-left: 13px; background-color: cadetblue; padding: 15px 20px;">Player
+            Turn:</span> <button class="button button1">Player
+            Two</button>
+    </div>
+
+</section>
+<div>
+    <mat-grid-list cols="8" rowHeight="80px">
+        <div>
+            <mat-grid-tile rowspan="2" class="playerTwo">{{StoneCountPitFourteen}}
+            </mat-grid-tile>
+            <mat-grid-tile class="playerTwo">
+                <div class="container" (click)="gamePlay(13)">{{StoneCountPitThirteen}}</div>
+            </mat-grid-tile>
+            <mat-grid-tile class="playerTwo">
+                <div class="container" (click)="gamePlay(12)">{{StoneCountPitTwelve}}</div>
+            </mat-grid-tile>
+            <mat-grid-tile class="playerTwo">
+                <div class="container" (click)="gamePlay(11)">{{StoneCountPitElevan}}</div>
+            </mat-grid-tile>
+            <mat-grid-tile class="playerTwo">
+                <div class="container" (click)="gamePlay(10)">{{StoneCountPitTen}}</div>
+            </mat-grid-tile>
+            <mat-grid-tile class="playerTwo">
+                <div class="container" (click)="gamePlay(9)">{{StoneCountPitNine}}</div>
+            </mat-grid-tile>
+            <mat-grid-tile class="playerTwo">
+                <div class="container" (click)="gamePlay(8)">{{StoneCountPitEight}}</div>
+            </mat-grid-tile>
+        </div>
+        <div>
+            <mat-grid-tile rowspan="2" class="playerOne">{{StoneCountPitSeven}}</mat-grid-tile>
+            <mat-grid-tile class="playerOne">
+                <div class="container" (click)="gamePlay(1)">{{StoneCountPitOne}}</div>
+            </mat-grid-tile>
+            <mat-grid-tile class="playerOne">
+                <div class="container" (click)="gamePlay(2)">{{StoneCountPitTwo}}</div>
+            </mat-grid-tile>
+            <mat-grid-tile class="playerOne">
+                <div class="container" (click)="gamePlay(3)">{{StoneCountPitThree}}</div>
+            </mat-grid-tile>
+            <mat-grid-tile class="playerOne">
+                <div class="container" (click)="gamePlay(4)">{{StoneCountPitFour}}</div>
+            </mat-grid-tile>
+            <mat-grid-tile class="playerOne">
+                <div class="container" (click)="gamePlay(5)">{{StoneCountPitFive}}</div>
+            </mat-grid-tile>
+            <mat-grid-tile class="playerOne">
+                <div class="container" (click)="gamePlay(6)">{{StoneCountPitSix}}</div>
+            </mat-grid-tile>
+        </div>
+    </mat-grid-list>
+</div>
+
+<div class="text-danger"
+    style="color:red; text-align: center; font-size :  25px; background-color :beige; margin-left: 500px;margin-right: 500px; "
+    *ngIf="errorMessage">{{errorMessage}}</div>

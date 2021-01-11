@@ -1,0 +1,50 @@
+div {
+  padding: 10px;
+}
+
+.startButton {
+  margin-top: 20px;
+  background-color: #055e0b;
+  border: none;
+  color: white;
+  padding: 20px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 15px;
+  margin-left: 1290px;
+}
+
+.playerTwo {
+  border: none;
+  background-color: rgb(110, 182, 248);
+  font-size: 20px;
+
+}
+
+.playerOne {
+  border: none;
+  background-color: royalblue;
+  font-size: 20px;
+ 
+}
+
+.button {
+  border: none;
+  color: black;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 10px 10px 0px 100px;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: rgb(110, 182, 248);
+}
+
+.button2 {
+  background-color: royalblue;
+}
